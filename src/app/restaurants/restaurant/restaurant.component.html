@@ -1,5 +1,5 @@
-<a href="#">
-  <div class="place-info-box">
+<a [routerLink]="['/restaurants', restaurant.id]">
+  <div class="place-info-box" >
     <span class="place-info-box-icon"><img [src]="restaurant.imagePath" /></span>
 
     <div class="place-info-box-content">
@@ -11,4 +11,3 @@
     <!-- /.info-box-content -->
   </div>
 </a>
-<!-- /.info-box -->
