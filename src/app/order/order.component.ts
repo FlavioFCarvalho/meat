@@ -43,5 +43,9 @@ export class OrderComponent implements OnInit {
   remove(item: CartItem){
     this.orderService.remove(item)
   }
+
+  checkOrder(order: any){
+    console.log(order)
+  }
   
 }
