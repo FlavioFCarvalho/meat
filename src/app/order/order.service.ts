@@ -8,8 +8,6 @@ import 'rxjs/add/operator/map';
 import {Order, OrderItem} from './order.model';
 import { MEAT_API } from '../app.api';
 
-import {MEAT_API} from '../app.api';
-
 
 
 @Injectable()
@@ -35,6 +33,10 @@ export class OrderService {
 
     remove(item: CartItem){
         this.cartService.removeItem(item)
+    }
+
+    clear(){
+        this.cartService.clear()
     }
 
     checkOrder(order: Order): Observable<string>{

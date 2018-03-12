@@ -49,10 +49,11 @@ export class OrderComponent implements OnInit {
     order.orderItems = this.cartItems()
       .map((item:CartItem)=> new OrderItem(item.quantity,item.menuItem.id ))
      
-    this.orderService.checkOrder(order).subscribe(orderId: string ) => {
+    this.orderService.checkOrder(order)
+      .subscribe((orderId: string ) => {
       console.log(`Compra concluída: ${orderId}`)
-        .this.OrderService.clear()
-    }  
+        this.orderService.clear()
+    })  
     console.log(order)
   }
   
