@@ -23,6 +23,11 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
 import { OrderComponent } from './order/order.component';
 import { InputComponent } from './shared/input/input.component';
 import { RadioComponent } from './shared/radio/radio.component';
+import { OrderItemsComponent } from './order/order-items/order-items.component';
+import { OrderService } from './order/order.service';
+import { DeliveryCostsComponent } from './order/delivery-costs/delivery-costs.component';
+import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
+
 
 
 
@@ -44,7 +49,10 @@ import { RadioComponent } from './shared/radio/radio.component';
     ReviewsComponent,
     OrderComponent,
     InputComponent,
-    RadioComponent
+    RadioComponent,
+    OrderItemsComponent,
+    DeliveryCostsComponent,
+    OrderSumaryComponent
   ],
   imports: [
     BrowserModule,
@@ -52,7 +60,11 @@ import { RadioComponent } from './shared/radio/radio.component';
     FormsModule,
     RouterModule.forRoot(ROUTES)
   ],
+<<<<<<< HEAD
   providers: [RestaurantsService, ShoppingCartService, {provide: LOCALE_ID, useValue:'pt-BR'}],
+=======
+  providers: [RestaurantsService, ShoppingCartService, OrderService],
+>>>>>>> finalizar_pedido
   bootstrap: [AppComponent]
 })
 export class AppModule { }
