@@ -1,8 +1,13 @@
 import { CartItem } from './cart-item.model';
 import { MenuItem } from "../menu-item/menu-item.model";
+import { Injectable } from '@angular/core';
+import { NotificationService } from '../../shared/messages/notification.service';
 
+@Injectable
 export class ShoppingCartService{
     items: CartItem[] = []
+
+    constructor(private notificationService: NotificationService ){}
 
     clear(){
        this.items = []
