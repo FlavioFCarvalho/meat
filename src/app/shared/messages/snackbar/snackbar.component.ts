@@ -1,5 +1,6 @@
 import { Component, OnInit} from '@angular/core';
 import { trigger, animate, state, style, transition} from '@angular/animations';
+import { NotificationService } from '../notification.service';
 
 @Component({
   selector: 'mt-snackbar',
@@ -27,9 +28,13 @@ export class SnackbarComponent implements OnInit {
 
   snackVisibility: string = 'hidden'
 
-  constructor() { }
+  constructor(private notificationService: NotificationService) { }
 
   ngOnInit() {
+    this.notificationService.notifier.subscribe(message=>{
+      this.message = message
+      this.snackVisibility = 'visible'
+    })
   }
 
 }
