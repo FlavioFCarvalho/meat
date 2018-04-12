@@ -3,7 +3,8 @@ import { MenuItem } from "../menu-item/menu-item.model";
 import { Injectable } from '@angular/core';
 import { NotificationService } from '../../shared/messages/notification.service';
 
-@Injectable
+@Injectable()
+// tslint:disable-next-line:one-line
 export class ShoppingCartService{
     items: CartItem[] = []
 
