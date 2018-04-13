@@ -760,17 +760,18 @@
       "id": 24
     },
     {
-      "name": "fffffffff",
-      "email": "fff@f.com",
-      "emailConfirmation": "fff@f.com",
-      "address": "Rua aaa",
-      "number": "2",
-      "optionalAddress": "2",
-      "paymentOption": "MON",
+
+      "name": "FLAVIO FREITAS CARVALHO",
+      "email": "flaviocfr@gmail.com",
+      "emailConfirmation": "flaviocfr@gmail.com",
+      "address": "Rua Don Aquino Correia ,41",
+      "number": "32",
+      "optionalAddress": "",
+      "paymentOption": "REF",
       "orderItems": [
         {
-          "quantity": 4,
-          "menuId": "chocpop"
+          "quantity": 3,
+          "menuId": "capp"
         }
       ],
       "id": 25
