@@ -22,6 +22,7 @@ import { RestaurantDetailComponent } from 'app/restaurant-detail/restaurant-deta
 import { OrderSumaryComponent } from './order-sumary/order-sumary.component';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 
@@ -38,7 +39,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ShoppingCartComponent,
     MenuItemComponent,
     ReviewsComponent,
-    OrderSumaryComponent
+    OrderSumaryComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
