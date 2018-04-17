@@ -6,17 +6,17 @@ import {trigger, state, style, transition, animate} from '@angular/animations';
 @Component({
   selector: 'mt-restaurants',
   templateUrl: './restaurants.component.html',
-  animations:  [
-    trigger('toggleSearch',[
+  animations: [
+    trigger('toggleSearch', [
       state('hidden', style({
         opacity: 0,
-        "max-heigth": "0px"
+        "max-height": "0px"
       })),
       state('visible', style({
         opacity: 1,
-        "max-heigth": "70px",
+        "max-height": "70px",
         "margin-top": "20px"
-      })), 
+      })),
       transition('* => *', animate('250ms 0s ease-in-out'))
     ])
   ]
