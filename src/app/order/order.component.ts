@@ -104,6 +104,7 @@ export class OrderComponent implements OnInit {
     this.orderService.remove(item);
   }
 
+  //Aqui
   isOrderCompleted(): boolean {
     return this.orderId !== undefined;
   }
@@ -122,5 +123,7 @@ export class OrderComponent implements OnInit {
         this.router.navigate(["/order-summary"]);
         this.orderService.clear();
       });
+
+    console.log(order);
   }
 }
