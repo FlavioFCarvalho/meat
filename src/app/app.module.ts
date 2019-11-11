@@ -2,6 +2,11 @@ import { ApplicationErrorHandler } from "./../app.error-handler";
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule, LOCALE_ID, ErrorHandler } from "@angular/core";
 import { HttpClientModule } from "@angular/common/http";
+import { registerLocaleData } from "@angular/common";
+import locatePt from "@angular/common/locales/pt";
+
+registerLocaleData(locatePt, "pt");
+
 import { RouterModule, PreloadAllModules } from "@angular/router";
 
 import { ROUTES } from "./app.routes";
@@ -50,7 +55,7 @@ import { UserDetailComponent } from "./header/user-detail/user-detail.component"
     RouterModule.forRoot(ROUTES, { preloadingStrategy: PreloadAllModules })
   ],
   providers: [
-    { provide: LOCALE_ID, useValue: "pt-BR" },
+    { provide: LOCALE_ID, useValue: "pt" },
     { provide: ErrorHandler, useClass: ApplicationErrorHandler }
   ],
   bootstrap: [AppComponent]
